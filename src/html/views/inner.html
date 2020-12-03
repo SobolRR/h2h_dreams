@@ -1,0 +1,21 @@
+<% var data = {
+  title: "Title",
+  video: {
+    src: "https://gos3.io/pbm-videos/Kurzzeit/20200902_DAK_PROOF/DAK_MANN_D.mp4",
+    type: "video/mp4",
+    poster: "img/video-poster2.png",
+    controls: true,
+    boxName: "_02"
+  }
+
+
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+<main class="page__main _02">
+
+
+</main>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
