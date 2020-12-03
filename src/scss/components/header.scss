@@ -1,0 +1,16 @@
+.header {
+    padding: 25px 0;
+    border-bottom: 1px solid $gray-e5;
+    
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .logo {
+        display: inline-block;
+    }
+
+}

@@ -12,9 +12,17 @@
 
 
 <main class="page__main _01">
-    <ul style="padding: 100px 50px;">
-        <li><a href="/inner.html" target="_blank">Inner</a></li>
-    </ul>
+    <div class="container">
+        <ul style="padding: 100px 50px;">
+            <li><a href="/inner.html" target="_blank">Inner</a></li>
+        </ul>
+        <div style="background-color: #ccc; padding: 20px;">
+            <div class="btn">Button</div>
+            <div class="btn btn--white">Button</div>
+            <div class="btn btn--white-reverse">Button</div>
+        </div>
+
+    </div>
 </main>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>

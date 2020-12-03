@@ -1,5 +1,5 @@
 @import "vars";
-@import "media";
+@import "mediaqueries";
 
 *,
 *:before,
@@ -9,9 +9,11 @@
 
 body {
   margin: 0;
-  font: 18px/32px Arial, Helvetica, sans-serif;
-  background: #fff;
+  font: 400 16px/28px $font-family-primary;
+  letter-spacing: 0.2px;
+  background: $white;
   min-width: 375px;
+  color: $text-default;
 }
 
 video {
@@ -25,7 +27,7 @@ img {
 }
 
 .container {
-  width: 1140px;
+  width: 1270px;
   max-width: 100%;
   padding: 0 15px;
   margin-left: auto;

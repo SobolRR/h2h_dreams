@@ -1,0 +1,21 @@
+.footer {
+    padding: 25px 0;
+    border-top: 1px solid $gray-e5;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.social-links-list {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+}

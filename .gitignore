@@ -59,7 +59,7 @@ typings/
 .idea
 /.idea
 .idea/
-
+.history
 
 dist/php/
 src/php/parameters.php
