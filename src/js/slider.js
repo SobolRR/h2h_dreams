@@ -6,13 +6,12 @@ export const initSlider = () => {
             slidesToShow: 3,
             slidesToScroll: 1,
             centerMode: false,
-            // centerPadding: '33px',
             infinite: false,
             responsive: [
                 {
-                    breakpoint: 1024,
+                    breakpoint: 1025,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 2,
                         slidesToScroll: 1,
                         infinite: true,
                         adaptiveHeight: false,
@@ -20,9 +19,9 @@ export const initSlider = () => {
                     }
                 },
                 {
-                    breakpoint: 767,
+                    breakpoint: 768,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 1,
                         slidesToScroll: 1,
                         infinite: true,
                         adaptiveHeight: false,
