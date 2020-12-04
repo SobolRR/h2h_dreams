@@ -1,6 +1,5 @@
 .slick-slider {
     position: relative;
-  }
   
   .slick-list {
     overflow: hidden;
@@ -70,19 +69,23 @@
     }
   }
   
-  .slick-prev {
-    left: -10px;
+    .slick-prev {
+        left: -10px;
+        @media (min-width: $desktopL) {
+            left: -35px;
+        }
 
-    @media (min-width: $tablet) {
-        left: -20px;
+        &:before {
+            transform: rotate(180deg);
+        }
     }
   
-    &:before {
-      transform: rotate(180deg);
+    .slick-next { 
+        right: -10px;
+
+        @media (min-width: $desktopL) {
+            right: -35px;
+        }
     }
-  }
-  
-  .slick-next { 
-    right: -15px;
 }
   
