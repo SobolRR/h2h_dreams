@@ -1,24 +1,27 @@
 .dream-descroption {
     &__row {
         display: flex;
+        align-items: center;
+        margin-left: -80px;
+        margin-right: -80px;
         &:not(:last-child) {
             margin-bottom: 100px;
-        }
-
-        &:nth-child(odd) {
-            .dream-descroption__col{
-                &:nth-child(odd){
-                    width: 40%;
-                }
-                &:nth-child(even){
-                    width: 60%;
-                }
-            }
         }
 
         &:nth-child(even) {
             .dream-descroption__col{
                 &:nth-child(odd){
+                    width: 40%;
+                }
+                &:nth-child(even){
+                    width: 60%;
+                }
+            }
+        }
+
+        &:nth-child(odd) {
+            .dream-descroption__col{
+                &:nth-child(odd){
                     width: 60%;
                 }
                 &:nth-child(even){
@@ -26,6 +29,10 @@
                 }
             }
         }
+    }
+
+    &__col {
+        padding: 0 80px;
     }
 
     img {
