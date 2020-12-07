@@ -1,13 +1,11 @@
 <nav class="breadcrumbs">
-    <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">
-            <a href="#"><%=navItem%></a>
-        </li>
-        <li class="breadcrumbs__item">
-            <a href="#"><%=navItem2%></a>
-        </li>
-        <li class="breadcrumbs__item">
-            <span><%=currentPageName%></span>
-        </li>
-    </ul>
+    <div class="breadcrumbs__list">
+        <a href="#" class="breadcrumbs__item">
+            <%=navItem%>
+        </a>
+        <a href="#" class="breadcrumbs__item">
+            <%=navItem2%>
+        </a>
+        <div class="breadcrumbs__item"><%=currentPageName%></div>
+    </div>
 </nav>

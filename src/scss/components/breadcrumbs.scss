@@ -28,13 +28,13 @@
             color: $gray-c4;
         }
 
-        a {
-            
-            text-decoration: none;
-            color: $gray-c4;
-            &:hover {
-                text-decoration: underline;
-            }
+    }
+    a.breadcrumbs__item {
+        
+        text-decoration: none;
+        color: $gray-c4;
+        &:hover {
+            text-decoration: underline;
         }
     }
 }
