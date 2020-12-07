@@ -1,17 +1,47 @@
 <% var data = {
   title: "Dream Details"
 }; %>
-<%= _.template(require('./../includes/header.html').default)({
-  title: 'lorem'
-}) %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
 
 
 <main class="page__main _02">
-  <%= _.template(require('./../includes/card.html').default)({
-    title: 'lorem',
-    description: 'hfhffhfhf'
-  }) %>
+  <div class="container">
+    <%= _.template(require('./../includes/breadcrumbs.html').default)({
+      navItem: 'Главная',
+      navItem2: 'Мечты',
+      currentPageName: 'Мечтa Ани'
+    }) %>
 
+    <%= _.template(require('./../includes/card-horizontal.html').default)({
+      imageSrc: 'img/icon-card-1.svg',
+      title: 'Аня, 15 лет',
+      description: 'Это комбинация веществ Xylitylglucoside - Anhydroxylitol – Xylitol, основная функция которых предотвратить обезвоживание и сохранить естественный защитный барьер. Они оказывают своё действие за счет усиления синтеза белков, липидов, составляющих липидную мантию кожи, а также стимуляции продукции гиалуроновой кислоты и других полисахаридов. Кроме того, такой состав помогает уменьшить воспаление и проявления аллергии.      ',
+    }) %>
+
+    <div class="dream-descroption">
+      <div class="dream-descroption__row">
+        <div class="dream-descroption__col">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+          </figure>
+        </div>
+        <div class="dream-descroption__col">
+          <p>Это комбинация веществ Xylitylglucoside - Anhydroxylitol – Xylitol, основная функция которых предотвратить обезвоживание и сохранить естественный защитный барьер. Они оказывают своё действие за счет усиления синтеза белков, липидов, составляющих липидную мантию кожи, а также стимуляции продукции гиалуроновой кислоты и других полисахаридов. Кроме того, такой состав помогает уменьшить воспаление и проявления аллергии.          </p>
+        </div>
+      </div>
+
+      <div class="dream-descroption__row">
+        <div class="dream-descroption__col">
+          <p>Это комбинация веществ Xylitylglucoside - Anhydroxylitol – Xylitol, основная функция которых предотвратить обезвоживание и сохранить естественный защитный барьер. Они оказывают своё действие за счет усиления синтеза белков, липидов, составляющих липидную мантию кожи, а также стимуляции продукции гиалуроновой кислоты и других полисахаридов. Кроме того, такой состав помогает уменьшить воспаление и проявления аллергии.          </p>
+        </div>
+        <div class="dream-descroption__col">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>

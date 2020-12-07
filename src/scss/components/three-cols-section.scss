@@ -1,6 +1,29 @@
 .three-cols-section {
     margin-bottom: 90px;
 
+    .title {
+        position: relative;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -75px;
+            left: 0;
+            width: 75px;
+            height: 75px;
+            background-image: url('../../img/butterfly-orange.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            @media (min-width: $desktopL) {
+                top: -75px;
+                left: -60px;
+            }
+    
+        }
+    }
+
     &__row {
         display: flex;
         justify-content: space-between;

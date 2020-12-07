@@ -1,6 +1,6 @@
 .about-us {
-    margin-bottom: 90px;
-
+    margin-bottom: 150px;
+    
     .container {
         width: 100%;
 
@@ -49,9 +49,10 @@
 
         &--img {
             padding: 15px 15px 0 0;
+            
 
             @media (min-width: $tabletMin) {
-                padding: 30px 30px 0 0;
+                padding: 60px 30px 0 0;
             }
 
             @media (min-width: $desktop) {
@@ -64,10 +65,34 @@
 .about-us-picture {
     background-color: $primary-orange-01;
     border-radius: 30px;
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -25px;
+        top: -50px;
+        width: 75px;
+        height: 75px;
+        background-image: url('../../img/sun.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @media (min-width: $tabletMin) {
+            top: -90px;
+            width: 107px;
+            height: 117px;
+        }
+    }
     
     @media (min-width: $desktop) {
         margin-right: auto;
+        &:after {
+            top: -117px;
+        }
     }
+
 
     img {
         display: block;

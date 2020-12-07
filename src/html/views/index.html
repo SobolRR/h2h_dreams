@@ -62,69 +62,59 @@
                 <h2 class="title title--h2">Мы сделали счастливее:</h2>
                 <div class="card-list cards-carousel">
                     <div class="card-list__item">
-                        <a href="#" class="card">
-                            <figure class="card__image">
-                                <img src='https://image.freepik.com/free-vector/one-happy-girl-with-red-balloons_1308-34866.jpg' />
-                            </figure>
-                            <div class="card__body">
-                                <div class="card__title">Аня, 15 лет</div>
-                                <div class="card__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et dolore magna aliqua
-                                </div>
-                            </div>
-                        </a>
+                        <%= _.template(require('./../includes/card.html').default)({
+                            status: 'completed',
+                            imageSrc: 'img/icon-card-1.svg',
+                            label: 'Исполнена',
+                            title: 'Аня, 15 лет',
+                            description: 'Это комбинация веществ Xylitylglucoside - Anhydroxylitol – Xylitol, основная функция которых предотвратить обезвоживание и сохранить естественный защитный барьер.',
+                            showLink: 'hide',
+                            showBtn: 'hide'
+                          }) %>
                     </div>
                     <div class="card-list__item">
-                        <a href="#" class="card">
-                            <figure class="card__image">
-                                <img src='https://image.freepik.com/free-vector/two-little-cute-girls-play-with-ball-kids-playing-outdoors-cartoon-character-children-have-fun-summer-recreation-activity_71593-604.jpg' />
-                            </figure>
-                            <div class="card__body">
-                                <div class="card__title">Вера, 8 лет</div>
-                                <div class="card__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et dolore magna aliqua tempor incididunt ut labore et dolore magna aliqua
-                                </div>
-                            </div>
-                        </a>
+                        <%= _.template(require('./../includes/card.html').default)({
+                            status: 'completed',
+                            imageSrc: 'img/icon-card-2.svg',
+                            label: 'Исполнена',
+                            title: 'Аня, 15 лет',
+                            description: 'Это комбина и сохранить естественный защитный барьер.',
+                            showLink: 'hide',
+                            showBtn: 'hide'
+                          }) %>
                     </div>
                     <div class="card-list__item">
-                        <a href="#" class="card">
-                            <figure class="card__image">
-                                <img src='https://image.freepik.com/free-vector/little-boy-pointing-with-index-finger-flat-vector-illustration_71593-566.jpg' />
-                            </figure>
-                            <div class="card__body">
-                                <div class="card__title">Слава, 10 лет</div>
-                                <div class="card__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et dolore magna aliqua tempor incididunt ut labore et dolore magna aliqua
-                                </div>
-                            </div>
-                        </a>
+                        <%= _.template(require('./../includes/card.html').default)({
+                            status: 'completed',
+                            imageSrc: 'img/flower.svg',
+                            label: 'Исполнена',
+                            title: 'Аня, 15 лет',
+                            description: 'Это комбинация веществ Xylitylglucoside - Anhydroxylitol – Xylitol, основная функция которых предотвратить обезвоживание и сохранить естественный защитный барьер.',
+                            showLink: 'hide',
+                            showBtn: 'hide'
+                          }) %>
                     </div>
                     <div class="card-list__item">
-                        <a href="#" class="card">
-                            <figure class="card__image">
-                                <img src='https://image.freepik.com/free-vector/two-little-cute-girls-play-with-ball-kids-playing-outdoors-cartoon-character-children-have-fun-summer-recreation-activity_71593-604.jpg' />
-                            </figure>
-                            <div class="card__body">
-                                <div class="card__title">Вера, 8 лет</div>
-                                <div class="card__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et dolore magna aliqua tempor incididunt ut labore et dolore magna aliqua
-                                </div>
-                            </div>
-                        </a>
+                        <%= _.template(require('./../includes/card.html').default)({
+                            status: 'completed',
+                            imageSrc: 'img/icon-card-1.svg',
+                            label: 'Исполнена',
+                            title: 'Аня, 15 лет',
+                            description: 'Это комбинация веществ Xylitylglucoside - Anhydroxylitol – Xylitol, основная функция которых предотвратить обезвоживание и сохранить естественный защитный барьер.',
+                            showLink: 'hide',
+                            showBtn: 'hide'
+                          }) %>
                     </div>
                     <div class="card-list__item">
-                        <a href="#" class="card">
-                            <figure class="card__image">
-                                <img src='https://image.freepik.com/free-vector/two-little-cute-girls-play-with-ball-kids-playing-outdoors-cartoon-character-children-have-fun-summer-recreation-activity_71593-604.jpg' />
-                            </figure>
-                            <div class="card__body">
-                                <div class="card__title">Оля, 9 лет</div>
-                                <div class="card__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                </div>
-                            </div>
-                        </a>
+                        <%= _.template(require('./../includes/card.html').default)({
+                            status: 'completed',
+                            imageSrc: 'img/flowers.svg',
+                            label: 'Исполнена',
+                            title: 'Аня, 15 лет',
+                            description: 'Это комбинация веществкция которых предотвратить обезвоживание и сохранить естественный защитный барьер.',
+                            showLink: 'hide',
+                            showBtn: 'hide'
+                          }) %>
                     </div>
                 </div>
             </div>

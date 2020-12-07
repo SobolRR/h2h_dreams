@@ -1,0 +1,37 @@
+.dream-descroption {
+    &__row {
+        display: flex;
+        &:not(:last-child) {
+            margin-bottom: 100px;
+        }
+
+        &:nth-child(odd) {
+            .dream-descroption__col{
+                &:nth-child(odd){
+                    width: 40%;
+                }
+                &:nth-child(even){
+                    width: 60%;
+                }
+            }
+        }
+
+        &:nth-child(even) {
+            .dream-descroption__col{
+                &:nth-child(odd){
+                    width: 60%;
+                }
+                &:nth-child(even){
+                    width: 40%;
+                }
+            }
+        }
+    }
+
+    img {
+        border-radius: 30px;
+    }
+
+
+
+}
