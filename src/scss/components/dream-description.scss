@@ -1,38 +1,71 @@
 .dream-descroption {
     &__row {
-        display: flex;
-        align-items: center;
-        margin-left: -80px;
-        margin-right: -80px;
+        margin-left: -25px;
+        margin-right: -25px;
         &:not(:last-child) {
-            margin-bottom: 100px;
+            margin-bottom: 40px;
+        }
+        
+        @media (min-width: $tabletMin) {
+            display: flex;
+            align-items: center;
+        }
+        
+        @media (min-width: $desktop) {
+            margin-left: -80px;
+            margin-right: -80px;
+            &:not(:last-child) {
+                margin-bottom: 100px;
+            }
         }
 
         &:nth-child(even) {
-            .dream-descroption__col{
+            .dream-descroption__col {
                 &:nth-child(odd){
-                    width: 40%;
+                    width: 100%;
                 }
                 &:nth-child(even){
-                    width: 60%;
+                    width: 100%;
+                }
+
+                @media (min-width: $tabletMin) {
+                    &:nth-child(odd){
+                        width: 40%;
+                    }
+                    &:nth-child(even){
+                        width: 60%;
+                    }
                 }
             }
         }
 
         &:nth-child(odd) {
-            .dream-descroption__col{
+            .dream-descroption__col {
                 &:nth-child(odd){
-                    width: 60%;
+                    width: 100%;
                 }
                 &:nth-child(even){
-                    width: 40%;
+                    width: 100%;
+                }
+
+                @media (min-width: $tabletMin) {
+                    &:nth-child(odd){
+                        width: 60%;
+                    }
+                    &:nth-child(even){
+                        width: 40%;
+                    }
                 }
             }
         }
     }
 
     &__col {
-        padding: 0 80px;
+        padding: 0 25px;
+
+        @media (min-width: $desktop) {
+            padding: 0 80px;
+        }
     }
 
     img {

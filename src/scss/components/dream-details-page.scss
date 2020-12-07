@@ -1,5 +1,9 @@
 .dream-details-page {
     .card-horizontal {
-        margin-bottom: 100px;
+        margin-bottom: 40px;
+
+        @media (min-width: $tabletMin) {
+            margin-bottom: 100px;
+        }
     }
 }

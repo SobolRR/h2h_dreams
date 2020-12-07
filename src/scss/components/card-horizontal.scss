@@ -1,28 +1,41 @@
 
 .card-horizontal {
     height: 100%;
-    padding: 35px 45px;
+    padding: 0 0 20px;
     border-radius: 30px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.15), 0 2px 4px 0 rgba(0,0,0,.1);
     background: $primary-orange-02;
     color: $white;
+
+    @media (min-width: $tabletMin) {
+        padding: 20px;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 35px 45px;
+    }
 
     &:focus {
         outline: none;
     }
 
     &__row {
-        display: flex;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+        
+        @media (min-width: $tabletMin) {
+            display: flex;
+            margin-bottom: 40px;
+        }
     }
 
     &__image {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 400px;
+        width: 100%;
+        max-width: 100%;
         margin: 0;
-        border-radius: 30px;
+        border-radius: 30px 30px 0 0;
         text-align: center;
         background: $white;
 
@@ -31,44 +44,100 @@
             max-width: 100%;
             border-radius: 30px 30px 0 0;
         }
+        @media (min-width: $tabletMin) {
+            width: 250px;
+            border-radius: 30px;
+            img {
+                border-radius: 30px;
+            }
+        }
+
+        @media (min-width: $desktop) {
+            width: 400px;
+            min-width: 250px;
+        }
+        
     }
 
     &__body {
         position: relative;
         flex: 1;
-        padding: 0 0 0 60px;
+        padding: 20px 20px 0;
         font-size: 14px;
+
+        @media (min-width: $tabletMin) {
+            padding: 0 0 0 20px;
+        }
+
+        @media (min-width: $desktop) {
+            padding: 0 0 0 60px;
+        }
     }
 
     &__body-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row-reverse;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
+        
+        @media (min-width: $tabletMin) {
+            margin-bottom: 30px;
+            
+        }
+        
+        @media (min-width: $desktop) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row-reverse;
+
+        }
+    }
+
+    .share-list {
+        margin-bottom: 20px;
+        justify-content: flex-end;
+
+        @media (min-width: $tabletMin) {
+            margin-bottom: 0;
+        }
     }
 
     &__title {
-        font-size: 36px;
+        font-size: 24px;
         line-height: 1.2;
         font-weight: 500;
+
+        @media (min-width: $tabletMin) {
+            font-size: 36px;
+        }
     }
 
     &__description {
-        width: 600px;
-        max-width: 100%;
-        font-size: 16px;
-        line-height: 28px;
+        font-size: 14px;
+        line-height: 23px;
+
+        @media (min-width: $tabletMin) {
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        @media (min-width: $desktop) {
+            max-width: 100%;
+            width: 600px;
+        }
     }
 
     &__progress {
         height: 37px;
+        margin: 0 20px;
         border-radius: 37px;
         background: $white;
         text-align: center;
         font-size: 14px;
         line-height: 28px;
         color: $text-default;
+
+        @media (min-width: $tabletMin)  {
+            margin: 0;
+        }
 
     }
 }
@@ -80,7 +149,18 @@
     &__item {
         line-height: 1;
         &:not(:last-child) {
-            margin-right: 35px;
+            margin-right: 15px;
+
+            @media (min-width: $tabletMin) {
+                margin-right: 35px;
+            }
+        }
+
+        img {
+            width: 20px;
+            @media (min-width: $tabletMin) {
+                width: 100%;
+            }
         }
     }
 }
