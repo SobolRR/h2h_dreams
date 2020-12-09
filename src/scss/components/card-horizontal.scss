@@ -134,28 +134,7 @@
     }
 }
 
-.share-list {
-    display: flex;
-    align-items: center;
 
-    &__item {
-        line-height: 1;
-        &:not(:last-child) {
-            margin-right: 15px;
-
-            @media (min-width: $tabletMin) {
-                margin-right: 35px;
-            }
-        }
-
-        img {
-            width: 20px;
-            @media (min-width: $tabletMin) {
-                width: 100%;
-            }
-        }
-    }
-}
 
 .progress-bar {
     position: relative;
