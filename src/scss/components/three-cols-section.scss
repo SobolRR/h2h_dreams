@@ -1,6 +1,10 @@
 .three-cols-section {
     margin-bottom: 90px;
 
+    @media (min-width: $desktop) {
+        margin-bottom: 160px;
+    }
+
     .title {
         position: relative;
 
