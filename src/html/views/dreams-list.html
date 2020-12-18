@@ -4,7 +4,7 @@
   <%= _.template(require('./../includes/header.html').default)(data) %>
   
   
-  <main class="page__main _01">
+  <main class="page__main _01 page__dreams-list">
     <div class="container">
         <%= _.template(require('./../includes/breadcrumbs.html').default)({
             navItem: 'Главная',
@@ -15,7 +15,7 @@
             <div class="card-list__item">
                 <%= _.template(require('./../includes/card.html').default)({
                     status: 'completed',
-                    imageSrc: 'img/icon-card-1.svg',
+                    imageSrc: 'img/snow-angel.svg',
                     label: 'Исполнена',
                     title: 'Аня, 15 лет',
                     description: 'Это комбинация веществ Xylitylglucoside - Anhydroxylitol – Xylitol, основная функция которых предотвратить обезвоживание и сохранить естественный защитный барьер.',
@@ -26,7 +26,7 @@
             <div class="card-list__item">
                 <%= _.template(require('./../includes/card.html').default)({
                     status: 'in-progress',
-                    imageSrc: 'img/icon-card-2.svg',
+                    imageSrc: 'img/make-snowman.svg',
                     label: 'В процессе',
                     title: 'Маша, 10 лет',
                     description: 'Это комбинация веществ Xylitylglucoside - Anhydroxylitol – Xylitol, основная функция которых ',
@@ -37,7 +37,7 @@
             <div class="card-list__item">
                 <%= _.template(require('./../includes/card.html').default)({
                     status: 'not-completed',
-                    imageSrc: 'img/flower.svg',
+                    imageSrc: 'img/boy.svg',
                     label: 'Не исполнена',
                     title: 'Оля, 5 лет',
                     description: 'Это комбинация ',
@@ -48,7 +48,7 @@
             <div class="card-list__item">
                 <%= _.template(require('./../includes/card.html').default)({
                     status: 'completed',
-                    imageSrc: 'img/flowers.svg',
+                    imageSrc: 'img/boy-2.svg',
                     label: 'Исполнена',
                     title: 'Оля, 5 лет',
                     description: 'Это комбинация веществ Xylitylglucoside - Anhydroxylitol – Xylitol, основная функция которых ',
@@ -59,7 +59,7 @@
             <div class="card-list__item">
                 <%= _.template(require('./../includes/card.html').default)({
                     status: 'completed',
-                    imageSrc: 'img/icon-card-2.svg',
+                    imageSrc: 'img/girl.svg',
                     label: 'Исполнена',
                     title: 'Оля, 5 лет',
                     description: 'Это комбинация веществ Xylitylglucoside - Anhydroxylitol – Xylitol, основная функция которых ',
@@ -70,7 +70,7 @@
             <div class="card-list__item">
                 <%= _.template(require('./../includes/card.html').default)({
                     status: 'in-progress',
-                    imageSrc: 'img/icon-card-1.svg',
+                    imageSrc: 'img/girl-2.svg',
                     label: 'В процессе',
                     title: 'Вероника, 7 лет',
                     description: 'Это комбинация веществ Xylitylglucoside - Anhydroxylitol – Xylitol, основная функция которых ',
@@ -81,7 +81,7 @@
             <div class="card-list__item">
                 <%= _.template(require('./../includes/card.html').default)({
                     status: 'not-completed',
-                    imageSrc: 'https://image.freepik.com/free-vector/one-happy-girl-with-red-balloons_1308-34866.jpg',
+                    imageSrc: 'img/snow-angel.svg',
                     label: 'Не исполнена',
                     title: 'Катя, 10 лет',
                     description: 'Это комбинация веществ основная функция которых ',
@@ -90,6 +90,7 @@
                   }) %>
             </div>
         </div>
+        <div class="background-section"></div>
     </div>
     
   </main>
