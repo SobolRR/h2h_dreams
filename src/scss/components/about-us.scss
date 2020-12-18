@@ -1,5 +1,5 @@
 .about-us {
-    margin-bottom: 150px;
+    margin-bottom: 170px;
     
     .container {
         width: 100%;
@@ -71,31 +71,33 @@
         content: '';
         display: block;
         position: absolute;
-        left: -25px;
-        top: -50px;
-        width: 75px;
-        height: 75px;
-        background-image: url('../../img/sun.svg');
+        bottom: -90px;
+        right: -50px;
+        width: 280px;
+        height: 200px;
+        background-image: url('../../img/tree.svg');
         background-size: contain;
         background-repeat: no-repeat;
 
         @media (min-width: $tabletMin) {
-            top: -90px;
-            width: 107px;
-            height: 117px;
+            bottom: -130px;
+            width: 515px;
+            height: 370px;
+            right: -100px;
+        }
+        @media (min-width: $desktop) {
+            bottom: -117px;
         }
     }
     
     @media (min-width: $desktop) {
         margin-right: auto;
-        &:after {
-            top: -117px;
-        }
     }
 
 
     img {
         display: block;
+        width: 100%;
         border-radius: 30px;
         transform: translate(15px, -15px);
 

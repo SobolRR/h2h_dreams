@@ -12,8 +12,7 @@ button {
     display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	padding: 10px 35px;
-	height: 58px;
+	padding: 10px 20px;
 	border-width: 1px;
 	border-style: solid;
 	border-color: transparent;
@@ -32,6 +31,12 @@ button {
 	cursor: pointer;
 	outline: none;
     transition: all 0.3s;
+    height: 48px;
+
+    @media (min-width: $tabletMin) {
+        height: 58px;
+        padding: 10px 35px;
+    }
 
     &:hover {
 		background-color: $primary-orange-03;
